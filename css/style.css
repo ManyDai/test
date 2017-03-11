@@ -1,0 +1,226 @@
+html {
+  min-height: 100%;
+  background: url(../img/bac.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 640px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: top;
+}
+body {
+  background-color: transparent;
+  font-family: '微软雅黑' !important;
+  color: #000 !important;
+}
+p {
+  color: #333 !important;
+}
+.logo-wrap {
+  padding: 1rem;
+}
+.logo-wrap .logo {
+  height: 1.5rem;
+}
+.main-box {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
+.main-box .main-pic {
+  display: block;
+  width: 70%;
+}
+.main-box .main-content {
+  top: -1.2rem;
+}
+.main-box .main-content img.p0 {
+  width: 100%;
+}
+.main-box .main-content img.p1 {
+  width: 90%;
+  left: 5%;
+  top: -2%;
+}
+.main-box .main-footer {
+  width: 90%;
+  padding-bottom: 1rem;
+}
+.main-box .main-footer a {
+  width: 50%;
+}
+.main-box .main-footer a img {
+  height: 1.5rem;
+}
+.appreciate-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.appreciate-box .appreciate {
+  display: block;
+  width: 30%;
+  margin: 1rem 0 1.5rem;
+}
+.appreciate-box .letter-body {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 8% 5% 5%;
+  width: 85%;
+  box-sizing: border-box;
+}
+.appreciate-box .letter-body p.pre {
+  margin: 2rem 0;
+  color: #ff7368 !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.appreciate-box .letter-body .qr {
+  width: 40%;
+  margin: 1rem 0;
+}
+.red {
+  color: #ff7368 !important;
+}
+.yellow {
+  color: #ebb161 !important;
+  margin: 1rem 0;
+}
+.gro {
+  color: #753a2e;
+  width: 66%;
+  left: 17%;
+  top: 16%;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.sub {
+  font-family: '微软雅黑';
+  color: white;
+  background: #ff4444;
+  width: 39%;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  padding: 2% 5%;
+}
+.common-txt {
+  font-size: 0.7rem;
+  padding: 0 5%;
+}
+.gift {
+  width: 100%;
+}
+.info-wrap {
+  margin-top: 1rem;
+}
+.info-wrap .form-item span {
+  height: 2rem;
+  line-height: 2rem;
+}
+.info-wrap .form-item input {
+  height: 2rem;
+  line-height: 2rem;
+  border: none;
+  outline: none;
+  background: #ccc;
+  border-radius: 0.3rem;
+  width: 40%;
+  font-family: '微软雅黑';
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  box-sizing: border-box;
+}
+.info-wrap .infos {
+  margin-top: 2rem;
+}
+.white {
+  color: white;
+}
+.pic-box-wrap {
+  width: 275px;
+  margin: 5% auto;
+  padding-top: 275px;
+}
+.pic-box-wrap .pic-box {
+  width: 100%;
+  height: 100%;
+  border: 0.2rem dashed  white;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 14px;
+}
+.pic-box-wrap .pic-box .pic-inner {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  color: white;
+}
+.pic-box-wrap .pic-box .pic-inner .add {
+  width: 3rem;
+}
+.pic-box-wrap .pic-box .pic-inner span {
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 27%;
+}
+.up-file {
+  width: 40%;
+  margin: 0rem 0 1rem;
+  text-align: center;
+  color: white;
+  background-color: #ebb161;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.canvas {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+}
+.canvas canvas {
+  display: block;
+}
+.canvas .tu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.canvas video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pho{
+  max-width: 100%;
+  max-height: 100%;
+}
+.wm{
+  width: 100%;
+}
+.hm{
+  height: 100%;
+}
