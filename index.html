@@ -1,242 +1,34 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>邀请函</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	<!-- build:css css/public-all.min.css -->
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/common.css">
-	<!-- endbuild -->
-	<link rel="stylesheet" href="css/mui.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<style type="text/css">
-	.layui-m-layercont p{
-		color: white !important;
-		font-family: '微软雅黑';
-		}</style>
+	<meta charset="utf-8">
+	<title>7881游戏交易-手机版</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="description" content="7881手游交易平台提供手游充值，APP充值，游戏币交易，装备交易，账号交易，寄售担保交易，点卡充值，游戏点等服务">
+    <meta name="keywords" content="手游交易平台，APP充值，手游充值">
+    <link rel="stylesheet" type="text/css" href="http://pic.7881.com/m7881-2016/css/m7881-common-2016.css">
+    <link rel="stylesheet" type="text/css" href="http://pic.7881.com/m7881-2016/css/index-2016.css">
+
+    <script type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
 </head>
 <body>
-	<div class="logo-wrap">
-		<img src="img/logo.png" alt="" class="logo">
-	</div>
-	<div class="main-box">
-		<img src="img/upload.png" alt="" style='width:70%;display:block;margin:1rem auto'>
-
-		<div class="pic-box-wrap relative">
-			<div class="pic-box absolute">
-				<div class="pic-inner relative" onclick="act()">
-					<img src="img/plus.png" alt="" class="add in">
-					<span class="absolute in">添加照片</span>
-					<div class="canvas absolute">
-						<video  width=241 height=241  id="v" style='z-index:10'></video>
-						<input type="file" id='file' style='display:none' accept="image/gif,image/jpeg,image/jpg,image/png">
-						<div class="tu absolute"></div>
-
-						<img src="" alt="" class="pho">
-					</div>
-				</div>
-			</div>
+<div class="viewrap">
+	<div class="kf">
+		<div class="kf-com">
+			<a href="javascript:void(0)" id="BizQQWPA">
+				<em class="iconfont">&#xe61d;</em><span>4001877881</span>
+			</a>
 		</div>
-		<div class="up-file none" id='upload-img'>上传</div>
-		<div class="up-file none" id='take-photo'>拍照</div>
-
-		<div class="common-txt white">中国人寿司庆嘉年华，特举办服务之星评选活动，要求业务
-		经理上门服务客户，并与客户合影上传到评比系统才能计算
-		考核，请为您的业务经理评选A+服务之星合影上传照片。</div>
-
-		<p class="common-txt yellow">提示：照片须体现出客户正面照及所持驾驶证/身份证。</p>
-
 	</div>
-
-
-
-	<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action " >
-	    <!-- 可选择菜单 -->
-	    <ul class="mui-table-view" >
-	      <li class="mui-table-view-cell" id='camara'>
-	        <span>拍照</span>
-	      </li>
-	      <li class="mui-table-view-cell">
-	        <label for="file" >相册</label>
-	      </li>
-	    </ul>
-	    <!-- 取消菜单 -->
-	    <ul class="mui-table-view">
-	      <li class="mui-table-view-cell" onclick="act()">
-	        <span><b>取消</b></span>
-	      </li>
-	    </ul>
-	</div>
-	<!-- build:js js/lib/jquery-sea.min.js -->
-    <script type="text/javascript" src='js/lib/jquery-2.1.4.min.js'></script>
-	<script type="text/javascript" src='js/lib/mui.min.js'></script> 
-	<script type="text/javascript" src='js/lib/layer.js'></script> 
-    <!-- endbuild -->
 	
-	<script type="text/javascript">
-		function act()
-		{
-			mui('#sheet1').popover('toggle');
-		};
+</div>
 
+<script type="text/javascript">
+BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 800078374, selector: 'BizQQWPA'});
+</script>
 
-		var newImageData;//所选照片的base64路径
-
-
-		// 图片压缩处理函数
-		function draw(obj,qua,type)
-		{
-			var cvs = document.createElement('canvas');
-			$('.in').removeClass('none');
-			// 判断是相册还是摄像头拍的
-			if(type=='photo'){
-				 cvs.width = obj.naturalWidth;
-	             cvs.height = obj.naturalHeight;
-	             cvs.getContext("2d").drawImage(obj, 0, 0,obj.naturalWidth,obj.naturalHeight);
-	         }else{
-	         	 cvs.width = 161;
-	             cvs.height =241;
-	             cvs.getContext("2d").drawImage(obj, 0, 0,161,241);
-	         }
-	         // end
-             
-			newImageData = cvs.toDataURL("image/jpeg", qua/100);//图片压缩,返回src
-			
-			// $('.tu').css({
-			// 			'background-image': 'url('+newImageData+')',
-			// 			'background-size': 'cover',
-			// 			'background-position':'center'
-			// 		});
-
-			$('.pho').removeClass('wm');
-		    $('.pho').removeClass('hm');
-		    var oImg=new Image();
-		    oImg.src=newImageData;
-		    oImg.onload=function()
-		    {
-		      var rate=oImg.height/oImg.width;
-		      rate<1?$('.pho').addClass('wm'):$('.pho').addClass('hm');
-		      $('.pho').attr('src', oImg.src);
-		    }
-
-			$('.up-file').addClass('none')&&$('#upload-img').removeClass('none');//显示上传按钮
-			$('.in').addClass('none');
-			layer.closeAll();
-			oVideo.style.display='none';
-		}
-
-		// 相册选择(图片压缩上传)
-		var oFile=document.getElementById('file');
-		oFile.onchange=function()
-		{
-			layer.open({
-				    type: 2
-				    ,content: '正在处理...'
-				  });
-			$('.in').removeClass('none');
-			// 上传单张图片
-			var oImg=new Image();
-			var oReader=new FileReader();
-			var file=this.files[0];
-			oReader.readAsDataURL(file);
-			oReader.onload=function()
-			{
-				oImg.src=oReader.result;
-
-				oImg.onload=function()
-				{
-					draw(oImg,60,'photo');
-				}		
-			}
-
-			// 以下为选择多张图片的测试demo，前提是在file控件设置multiple
-			// var file=this.files;
-			// $.each(file, function(index, val) {
-			// 	var oIm=new Image();
-			// 	var oReader=new FileReader();
-			// 	oReader.readAsDataURL(file[index]);
-			// 	oReader.onload=function()
-			// 	{
-			// 		oIm.src=oReader.result;
-			// 		oIm.onload=function()
-			// 		{
-			// 			$('body').append(oIm);
-			// 		}		
-			// 	}
-			// });
-			
-		}
-		// end
-
-
-		// 相机拍照
-		var oVideo=document.getElementById("v");
-		$('#camara').on('touchstart',function()
-		{
-			oVideo.style.display='block';
-			$('.in').removeClass('none');
-			$('.pho').attr('src', '');
-			mui('#sheet1').popover('toggle');
-			$('.up-file').addClass('none')&&$('#take-photo').removeClass('none');//显示拍照快门按钮
-
-			// Put event listeners into place
-	            var mediaConfig =  { video: true };
-	            var errBack = function(e) {
-	            	console.log('An error has occurred!', e)
-	            };
-
-				// Put video listeners into place
-	            if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-	                navigator.mediaDevices.getUserMedia(mediaConfig).then(function(stream) {
-	                    oVideo.src = window.URL.createObjectURL(stream);
-	                    oVideo.play();
-	                });
-	            }
-
-	            /* Legacy code below! */
-	            else if(navigator.getUserMedia) { // Standard
-					navigator.getUserMedia(mediaConfig, function(stream) {
-						oVideo.src = stream;
-						oVideo.play();
-					}, errBack);
-				} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
-					navigator.webkitGetUserMedia(mediaConfig, function(stream){
-						oVideo.src = window.webkitURL.createObjectURL(stream);
-						oVideo.play();
-					}, errBack);
-				} else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
-					navigator.mozGetUserMedia(mediaConfig, function(stream){
-						oVideo.src = window.URL.createObjectURL(stream);
-						oVideo.play();
-					}, errBack);
-				}
-
-	
-		});
-		// 拍到照片
-		$('#take-photo').on('click',function()
-		{
-			layer.open({
-				    type: 2
-				    ,content: '正在处理...'
-				  });
-			draw(oVideo,80,'camera');
-		});
-		// end
-
-
-
-		// 上传照片
-		$('#upload-img').click(function(event) {
-			/* Act on the event */
-				// 提交图片base64路径：newImageData
-			// 
-			layer.open({
-				    type: 2
-				    ,content: '正在上传'
-				  });
-		});
-	</script>
 </body>
 </html>
